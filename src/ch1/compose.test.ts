@@ -1,6 +1,5 @@
 import { identity } from './identity';
-
-const compose = <A, B, C>(f1: (a: A) => B, f2: (b: B) => C) => (x: A): C => f2(f1(x));
+import { compose } from './compose';
 
 describe('compose', () => {
   const f1 = (x: number) => x + 1;
